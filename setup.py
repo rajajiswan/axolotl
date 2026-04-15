@@ -50,6 +50,7 @@ setup(
         "evaluate",
         "scikit-learn",
         "optimum",
+        "wandb",  # added for personal experiment tracking
     ],
     extras_require={
         "flash-attn": [
