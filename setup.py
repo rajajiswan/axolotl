@@ -53,6 +53,7 @@ setup(
         "wandb",  # added for personal experiment tracking
         "matplotlib",  # added for plotting training curves locally
         "ipywidgets",  # added for nicer progress bars in Jupyter notebooks
+        "notebook",  # added to run Jupyter notebooks directly
     ],
     extras_require={
         "flash-attn": [
