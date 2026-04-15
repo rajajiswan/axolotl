@@ -52,6 +52,7 @@ setup(
         "optimum",
         "wandb",  # added for personal experiment tracking
         "matplotlib",  # added for plotting training curves locally
+        "ipywidgets",  # added for nicer progress bars in Jupyter notebooks
     ],
     extras_require={
         "flash-attn": [
