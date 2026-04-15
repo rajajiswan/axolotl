@@ -51,6 +51,7 @@ setup(
         "scikit-learn",
         "optimum",
         "wandb",  # added for personal experiment tracking
+        "matplotlib",  # added for plotting training curves locally
     ],
     extras_require={
         "flash-attn": [
