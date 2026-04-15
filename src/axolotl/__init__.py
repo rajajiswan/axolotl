@@ -1,11 +1,15 @@
-"""Axolotl - Train and fine-tune large language models"""
+# Copyright 2023 Axolotl contributors
+# SPDX-License-Identifier: Apache-2.0
 
-import pkgutil
-from importlib.metadata import PackageNotFoundError, version
+"""Axolotl - A tool for easily fine-tuning large language models.
 
-__path__ = pkgutil.extend_path(__path__, __name__)  # Make this a namespace package
+This package provides utilities and tools for fine-tuning LLMs using
+various techniques including LoRA, QLoRA, and full fine-tuning.
+"""
 
-try:
-    __version__ = version("axolotl")
-except PackageNotFoundError:
-    __version__ = "unknown"
+import importlib.metadata
+import logging
+
+__version__ = importlib.metadata.version("axolotl")
+
+logging.getLogger(__name__).addHandler(logging.NullHandler())
